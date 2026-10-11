@@ -35,8 +35,8 @@
   <link rel="preload" href="assets/fonts/Vazirmatn-FD-NL-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/Vazirmatn-FD-NL-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/Playball-Regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/style.css?v=2">
-  <script defer src="js/main.js?v=2"></script>
+  <link rel="stylesheet" href="css/style.css?v=3">
+  <script defer src="js/main.js?v=3"></script>
   <noscript><style>.intro{display:none!important}.reveal{opacity:1!important;transform:none!important}</style></noscript>
 </head>
 <body class="is-locked">
@@ -44,22 +44,33 @@
 
   <!-- 1. Intro: envelope -->
   <div class="intro" id="intro">
+    <div class="intro__head">
+      <img class="intro__flower" src="assets/flowers/flower1.webp" alt="" width="500" height="164" decoding="async">
+      <p class="intro__eyebrow" data-text="introEyebrow">دعوت‌نامه عروسی</p>
+      <p class="intro__names" data-text="couple">Yalda &amp; Omid</p>
+    </div>
     <div class="envelope" id="envelope" role="button" tabindex="0"
          aria-label="Yalda &amp; Omid — باز کردن دعوت‌نامه" aria-describedby="intro-hint">
       <div class="envelope__back" aria-hidden="true"></div>
       <div class="envelope__letter" aria-hidden="true">
-        <span class="envelope__letter-small">به نام عشق</span>
+        <img src="assets/flowers/flower3.webp" alt="" width="400" height="240" decoding="async">
+        <span class="envelope__letter-small" data-text="opening">به نام عشق</span>
         <span class="envelope__letter-names" data-text="couple">Yalda &amp; Omid</span>
       </div>
       <div class="envelope__front" aria-hidden="true">
-        <span class="envelope__names" data-text="couple">Yalda &amp; Omid</span>
+        <svg viewBox="0 0 300 204" preserveAspectRatio="none" focusable="false">
+          <path class="env-side" d="M0 0 150 110 0 204z"/>
+          <path class="env-side" d="M300 0 150 110 300 204z"/>
+          <path class="env-fold" d="M0 204 138 104q12-8 24 0L300 204"/>
+          <path class="env-bottom" d="M0 204 138 104q12-8 24 0L300 204z"/>
+        </svg>
       </div>
       <div class="envelope__flap" aria-hidden="true"></div>
       <div class="envelope__seal" aria-hidden="true">
         <svg viewBox="0 0 64 64" width="64" height="64" focusable="false">
           <path class="seal-wax" d="M32 3c4 0 6 3 9 4s7 0 9 3 1 6 3 9 5 5 5 9-3 6-4 9 0 7-3 9-6 1-9 3-5 5-9 5-6-3-9-4-7 0-9-3-1-6-3-9-5-5-5-9 3-6 4-9 0-7 3-9 6-1 9-3 5-5 9-5z"/>
-          <circle class="seal-ring" cx="32" cy="32" r="18"/>
-          <text class="seal-text" x="32" y="38" text-anchor="middle">ا · ی</text>
+          <circle class="seal-ring" cx="32" cy="32" r="19"/>
+          <text class="seal-text" x="32" y="37" text-anchor="middle">Y&amp;O</text>
         </svg>
       </div>
     </div>

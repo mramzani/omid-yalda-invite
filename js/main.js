@@ -27,6 +27,7 @@ const CONFIG = {
   // All user-facing texts. "\n" = line break.
   texts: {
     couple: 'Yalda & Omid',
+    introEyebrow: 'دعوت‌نامه عروسی',
     introHint: 'برای باز کردن لمس کنید',
     opening: 'به نام عشق',
     lead: 'در روزی که عشقم رنگ خاطره‌ای می‌گیرد\nکنارمان باشید ...',
@@ -222,7 +223,7 @@ const CONFIG = {
 
       intro.classList.add('is-opening');
       envelope.setAttribute('aria-expanded', 'true');
-      const total = reducedMotion.matches ? 150 : 2000;
+      const total = reducedMotion.matches ? 150 : 2100;
 
       setTimeout(() => {
         page.inert = false;
