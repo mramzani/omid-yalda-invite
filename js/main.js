@@ -11,16 +11,16 @@ const CONFIG = {
     calendarDescription: 'دوشنبه ۲۷ مهر ۱۴۰۵ — از ساعت ۷ بعد از ظهر',
   },
 
-  // Venue. Coordinates are approximate — correct them here.
+  // Venue. Coordinates are from the Balad place page.
   venue: {
     name: 'تالار فروزانی',
-    lat: 36.555,
-    lng: 53.124,
+    lat: 36.554386,
+    lng: 53.121414,
     links: {
       neshan: 'https://neshan.org/maps/places/d1102e01b0001169b90b6ff43ea9c3df',
       // null => built from lat/lng
-      balad: null,
-      google: null,
+      balad: 'https://balad.ir/p/%D8%AA%D8%A7%D9%84%D8%A7%D8%B1-%D8%B9%D8%B1%D9%88%D8%B3%DB%8C-%D9%81%D8%B1%D9%88%D8%B2%D8%A7%D9%86%DB%8C_ceremonial-services-PV2RL4A79M1Yle#17/36.554386/53.121414',
+      google: 'https://www.google.com/maps/search/?api=1&query=36.554386,53.121414',
     },
   },
 
