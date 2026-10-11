@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+# The page itself carries <meta name="robots" content="noindex"> (private invitation).

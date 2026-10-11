@@ -1,0 +1,13 @@
+{
+  "name": "omid-yalda-invite",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Digital wedding invitation — Omid & Yalda (static site)",
+  "scripts": {
+    "images": "node scripts/optimize-images.js",
+    "serve": "npx --yes serve -l 8080 ."
+  },
+  "devDependencies": {
+    "sharp": "^0.33.5"
+  }
+}
