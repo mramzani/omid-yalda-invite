@@ -1,0 +1,8 @@
+node_modules/
+assets/gallery/raw/*
+!assets/gallery/raw/.gitkeep
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+.lighthouse/
