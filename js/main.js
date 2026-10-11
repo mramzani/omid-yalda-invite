@@ -26,11 +26,11 @@ const CONFIG = {
 
   // All user-facing texts. "\n" = line break.
   texts: {
-    couple: 'امید و یلدا',
+    couple: 'Yalda & Omid',
     introHint: 'برای باز کردن لمس کنید',
     opening: 'به نام عشق',
     lead: 'در روزی که عشقم رنگ خاطره‌ای می‌گیرد\nکنارمان باشید ...',
-    names: 'امید و یلدا',
+    names: 'Yalda & Omid',
     date: 'دوشنبه ۲۷ مهر ۱۴۰۵\nموعد دیدار ما',
     time: 'از ساعت ۷ بعد از ظهر\nتا خاموشی ستارگان ✨',
     venue: 'تالار فروزانی',
@@ -53,12 +53,8 @@ const CONFIG = {
   // Gallery: output of `node scripts/optimize-images.js` goes here.
   // wide: true => spans the full row.
   gallery: [
-    { thumb: 'assets/gallery/placeholder-1-600.webp', full: 'assets/gallery/placeholder-1-1600.webp', w: 1600, h: 1067, alt: 'عکس ۱', wide: true },
-    { thumb: 'assets/gallery/placeholder-2-600.webp', full: 'assets/gallery/placeholder-2-1600.webp', w: 1280, h: 1600, alt: 'عکس ۲' },
-    { thumb: 'assets/gallery/placeholder-3-600.webp', full: 'assets/gallery/placeholder-3-1600.webp', w: 1280, h: 1600, alt: 'عکس ۳' },
-    { thumb: 'assets/gallery/placeholder-4-600.webp', full: 'assets/gallery/placeholder-4-1600.webp', w: 1280, h: 1600, alt: 'عکس ۴' },
-    { thumb: 'assets/gallery/placeholder-5-600.webp', full: 'assets/gallery/placeholder-5-1600.webp', w: 1280, h: 1600, alt: 'عکس ۵' },
-    { thumb: 'assets/gallery/placeholder-6-600.webp', full: 'assets/gallery/placeholder-6-1600.webp', w: 1600, h: 1067, alt: 'عکس ۶', wide: true },
+    { thumb: 'assets/gallery/img_3546-600.webp', full: 'assets/gallery/img_3546-1600.webp', w: 720, h: 1280, alt: 'عکس ۱' },
+    { thumb: 'assets/gallery/img_6011-600.webp', full: 'assets/gallery/img_6011-1600.webp', w: 1203, h: 1280, alt: 'عکس ۲' },
   ],
 
   music: {

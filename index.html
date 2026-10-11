@@ -34,8 +34,9 @@
 
   <link rel="preload" href="assets/fonts/Vazirmatn-FD-NL-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/Vazirmatn-FD-NL-Bold.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/style.css?v=1">
-  <script defer src="js/main.js?v=1"></script>
+  <link rel="preload" href="assets/fonts/Playball-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css?v=2">
+  <script defer src="js/main.js?v=2"></script>
   <noscript><style>.intro{display:none!important}.reveal{opacity:1!important;transform:none!important}</style></noscript>
 </head>
 <body class="is-locked">
@@ -44,14 +45,14 @@
   <!-- 1. Intro: envelope -->
   <div class="intro" id="intro">
     <div class="envelope" id="envelope" role="button" tabindex="0"
-         aria-label="امید و یلدا — باز کردن دعوت‌نامه" aria-describedby="intro-hint">
+         aria-label="Yalda &amp; Omid — باز کردن دعوت‌نامه" aria-describedby="intro-hint">
       <div class="envelope__back" aria-hidden="true"></div>
       <div class="envelope__letter" aria-hidden="true">
         <span class="envelope__letter-small">به نام عشق</span>
-        <span class="envelope__letter-names" data-text="couple">امید و یلدا</span>
+        <span class="envelope__letter-names" data-text="couple">Yalda &amp; Omid</span>
       </div>
       <div class="envelope__front" aria-hidden="true">
-        <span class="envelope__names" data-text="couple">امید و یلدا</span>
+        <span class="envelope__names" data-text="couple">Yalda &amp; Omid</span>
       </div>
       <div class="envelope__flap" aria-hidden="true"></div>
       <div class="envelope__seal" aria-hidden="true">
@@ -75,10 +76,11 @@
   <main class="page" id="page" inert>
     <!-- 2. Invitation text -->
     <section class="invite" id="invitation" aria-label="متن دعوت‌نامه">
+      <img class="flower reveal" src="assets/flowers/flower1.webp" alt="" width="500" height="164" decoding="async">
       <p class="invite__opening reveal" data-text="opening">به نام عشق</p>
       <p class="invite__lead reveal" data-text="lead">در روزی که عشقم رنگ خاطره‌ای می‌گیرد
 کنارمان باشید ...</p>
-      <h1 class="invite__names reveal" data-text="names">امید و یلدا</h1>
+      <h1 class="invite__names reveal" data-text="names">Yalda &amp; Omid</h1>
       <span class="divider reveal" aria-hidden="true"></span>
       <p class="invite__date reveal" data-text="date">دوشنبه ۲۷ مهر ۱۴۰۵
 موعد دیدار ما</p>
@@ -91,6 +93,7 @@
 
     <!-- 3. Countdown + 4. Add to calendar -->
     <section class="countdown section" id="countdown" aria-labelledby="countdown-title">
+      <img class="flower reveal" src="assets/flowers/flower2.webp" alt="" width="500" height="206" decoding="async" loading="lazy">
       <h2 class="section__title reveal" id="countdown-title" data-text="countdownTitle">تا لحظه‌ی دیدار</h2>
       <div class="countdown__timer reveal" id="timer" role="timer" aria-live="off">
         <div class="unit" data-unit="days"><div class="flip"></div><span class="unit__label">روز</span></div>
@@ -136,6 +139,7 @@
 
     <!-- 6. Gallery -->
     <section class="gallery section" id="gallery" aria-labelledby="gallery-title">
+      <img class="flower flower--small reveal" src="assets/flowers/flower3.webp" alt="" width="400" height="240" decoding="async" loading="lazy">
       <h2 class="section__title reveal" id="gallery-title" data-text="galleryTitle">قاب خاطره‌ها</h2>
       <ul class="gallery__grid" id="gallery-grid"></ul>
     </section>
@@ -143,7 +147,7 @@
     <!-- 7. Closing -->
     <section class="closing section" id="closing" aria-labelledby="closing-title">
       <p class="closing__text reveal" id="closing-title" data-text="closing">چشم‌انتظار حضور گرمتان هستیم</p>
-      <p class="closing__names reveal" data-text="couple">امید و یلدا</p>
+      <p class="closing__names reveal" data-text="couple">Yalda &amp; Omid</p>
       <button class="btn btn--outline reveal" id="share" type="button">
         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3v12M7.5 7.5 12 3l4.5 4.5M5 12v7a1.5 1.5 0 0 0 1.5 1.5h11A1.5 1.5 0 0 0 19 19v-7"/></svg>
         <span data-text="share">ارسال دعوت‌نامه برای دیگران</span>

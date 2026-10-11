@@ -25,6 +25,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Playball";
+  src: url("../assets/fonts/Playball-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --bg: #faf7f2;
   --bg-deep: #f2ece3;
@@ -42,6 +50,7 @@
   --ease-in-out: cubic-bezier(.65, 0, .35, 1);
   --page-w: 480px;
   --font: "Vazirmatn", Tahoma, "Segoe UI", system-ui, sans-serif;
+  --font-script: "Playball", "Segoe Script", "Brush Script MT", cursive;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -179,7 +188,7 @@ img, svg { display: block; }
   transition: transform .9s var(--ease) .55s;
 }
 .envelope__letter-small { font-size: 12px; color: var(--muted); }
-.envelope__letter-names { font-size: 24px; font-weight: 700; color: var(--ink); }
+.envelope__letter-names { font-size: 26px; color: var(--ink); line-height: 1.4; }
 
 .envelope__front {
   z-index: 3;
@@ -195,9 +204,8 @@ img, svg { display: block; }
   filter: drop-shadow(0 -1px 0 rgba(0, 0, 0, .04));
 }
 .envelope__names {
-  font-size: clamp(20px, 6.2vw, 27px);
-  font-weight: 700;
-  letter-spacing: -.01em;
+  font-size: clamp(24px, 7.4vw, 32px);
+  line-height: 1.4;
   color: var(--ink);
   transition: opacity .4s ease .4s;
 }
@@ -307,6 +315,17 @@ img, svg { display: block; }
   background: var(--accent-soft);
 }
 
+/* watercolour flowers above a section heading */
+.flower {
+  width: min(86%, 340px);
+  height: auto;
+  margin-bottom: 18px;
+  pointer-events: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.flower--small { width: min(64%, 250px); }
+
 /* reveal on scroll */
 .reveal {
   opacity: 0;
@@ -347,10 +366,8 @@ img, svg { display: block; }
 }
 .invite__names {
   margin: 30px 0 18px;
-  font-size: clamp(52px, 17vw, 76px);
-  font-weight: 700;
+  font-size: clamp(40px, 13.5vw, 62px);
   line-height: 1.25;
-  letter-spacing: -.02em;
   color: var(--ink);
 }
 .divider {
@@ -709,8 +726,20 @@ img, svg { display: block; }
 }
 .closing__names {
   margin: 6px 0 26px;
-  font-size: 30px;
-  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.5;
+}
+
+/* couple's names: Latin script face */
+.envelope__letter-names,
+.envelope__names,
+.invite__names,
+.closing__names {
+  font-family: var(--font-script);
+  font-weight: 400;
+  direction: ltr;
+  unicode-bidi: isolate;
+  letter-spacing: 0;
 }
 
 /* ==========================================================================
